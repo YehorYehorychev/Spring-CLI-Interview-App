@@ -1,8 +1,8 @@
 package com.yehorychev.interviewapp.service;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class DemoService {
 
     public void processData() {
