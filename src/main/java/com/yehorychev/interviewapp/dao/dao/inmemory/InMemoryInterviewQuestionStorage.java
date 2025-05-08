@@ -1,7 +1,8 @@
-package com.yehorychev.interviewapp.cliinterviewapp.dao.inmemory;
+package com.yehorychev.interviewapp.dao.dao.inmemory;
 
-import com.yehorychev.interviewapp.cliinterviewapp.dao.InterviewQuestionStorage;
-import com.yehorychev.interviewapp.cliinterviewapp.model.InterviewQuestion;
+import com.yehorychev.interviewapp.dao.dao.InterviewQuestionStorage;
+import com.yehorychev.interviewapp.model.model.InterviewQuestion;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
+@Component
 public class InMemoryInterviewQuestionStorage implements InterviewQuestionStorage {
 
     private final AtomicLong lastIdentifier;

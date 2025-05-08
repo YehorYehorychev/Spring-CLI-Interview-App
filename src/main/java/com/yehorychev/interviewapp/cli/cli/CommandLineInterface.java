@@ -1,11 +1,13 @@
-package com.yehorychev.interviewapp.cliinterviewapp.cli;
+package com.yehorychev.interviewapp.cli.cli;
 
-import com.yehorychev.interviewapp.cliinterviewapp.controller.InterviewQuestionController;
-import com.yehorychev.interviewapp.cliinterviewapp.dto.InterviewQuestionDto;
+import com.yehorychev.interviewapp.controller.controller.InterviewQuestionController;
+import com.yehorychev.interviewapp.dto.dto.InterviewQuestionDto;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Scanner;
 
+@Component
 public class CommandLineInterface {
     public static final String ADD_INTERVIEW_QUESTION_MENU_TEXT = """
             ====== Enter the question: ======

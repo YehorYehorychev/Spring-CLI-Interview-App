@@ -1,8 +1,10 @@
-package com.yehorychev.interviewapp.cliinterviewapp.service.mappers;
+package com.yehorychev.interviewapp.service.service.mappers;
 
-import com.yehorychev.interviewapp.cliinterviewapp.dto.InterviewQuestionDto;
-import com.yehorychev.interviewapp.cliinterviewapp.model.InterviewQuestion;
+import com.yehorychev.interviewapp.dto.dto.InterviewQuestionDto;
+import com.yehorychev.interviewapp.model.model.InterviewQuestion;
+import org.springframework.stereotype.Service;
 
+@Service
 public class InterviewQuestionMapper {
 
     public InterviewQuestion toInterviewQuestion(InterviewQuestionDto interviewQuestionDto) {

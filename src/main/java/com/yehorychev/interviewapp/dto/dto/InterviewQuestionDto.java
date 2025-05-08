@@ -1,5 +1,8 @@
-package com.yehorychev.interviewapp.cliinterviewapp.dto;
+package com.yehorychev.interviewapp.dto.dto;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class InterviewQuestionDto {
     Long id;
     String question;

@@ -1,7 +1,7 @@
-package com.yehorychev.interviewapp.cliinterviewapp.initdata;
+package com.yehorychev.interviewapp.initdata.initdata;
 
-import com.yehorychev.interviewapp.cliinterviewapp.controller.InterviewQuestionController;
-import com.yehorychev.interviewapp.cliinterviewapp.dto.InterviewQuestionDto;
+import com.yehorychev.interviewapp.controller.controller.InterviewQuestionController;
+import com.yehorychev.interviewapp.dto.dto.InterviewQuestionDto;
 
 
 public class InitDataLoader {

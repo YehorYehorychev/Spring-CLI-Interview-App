@@ -1,4 +1,4 @@
-package com.yehorychev.interviewapp.cliinterviewapp.model;
+package com.yehorychev.interviewapp.model.model;
 
 import java.util.Objects;
 
