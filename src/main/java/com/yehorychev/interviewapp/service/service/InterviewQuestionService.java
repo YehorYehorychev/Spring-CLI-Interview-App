@@ -1,12 +1,14 @@
-package com.yehorychev.interviewapp.cliinterviewapp.service;
+package com.yehorychev.interviewapp.service.service;
 
-import com.yehorychev.interviewapp.cliinterviewapp.dao.InterviewQuestionStorage;
-import com.yehorychev.interviewapp.cliinterviewapp.dto.InterviewQuestionDto;
-import com.yehorychev.interviewapp.cliinterviewapp.model.InterviewQuestion;
-import com.yehorychev.interviewapp.cliinterviewapp.service.mappers.InterviewQuestionMapper;
+import com.yehorychev.interviewapp.dao.dao.InterviewQuestionStorage;
+import com.yehorychev.interviewapp.dto.dto.InterviewQuestionDto;
+import com.yehorychev.interviewapp.model.model.InterviewQuestion;
+import com.yehorychev.interviewapp.service.service.mappers.InterviewQuestionMapper;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class InterviewQuestionService {
 
     private final InterviewQuestionMapper interviewQuestionMapper;

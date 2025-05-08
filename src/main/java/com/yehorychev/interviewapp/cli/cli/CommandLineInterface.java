@@ -1,14 +1,16 @@
-package com.yehorychev.interviewapp.cliinterviewapp.cli;
+package com.yehorychev.interviewapp.cli.cli;
 
-import com.yehorychev.interviewapp.cliinterviewapp.controller.InterviewQuestionController;
-import com.yehorychev.interviewapp.cliinterviewapp.dto.InterviewQuestionDto;
+import com.yehorychev.interviewapp.controller.controller.InterviewQuestionController;
+import com.yehorychev.interviewapp.dto.dto.InterviewQuestionDto;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Scanner;
 
+@Component
 public class CommandLineInterface {
     public static final String ADD_INTERVIEW_QUESTION_MENU_TEXT = """
-            ====== Enter the question: ======
+            ══════ Enter the question: ══════
                 (or type 'menu' to return):
             """;
     private final InterviewQuestionController interviewQuestionController;
@@ -19,12 +21,13 @@ public class CommandLineInterface {
     }
 
     public static final String APP_MENU_TEXT = """
-            Commands:
-            
-            1. list    - List all questions
-            2. add     - Add a new question and answer
-            3. exit    - Exit the app
-            
+            ╔════════════════════════════════════════════╗
+            ║                Commands Menu               ║
+            ╠════════════════════════════════════════════╣
+            ║ 1. list  - List all questions              ║
+            ║ 2. add   - Add a new question and answer   ║
+            ║ 3. exit  - Exit the app                    ║
+            ╚════════════════════════════════════════════╝
             Enter Command:
             """;
 
@@ -43,14 +46,15 @@ public class CommandLineInterface {
             } else {
                 input = cliCommandParsingResult.cliCommand();
                 switch (input) {
-                    case CliCommands.LIST -> printAllInterviewQuestions(interviewQuestionController.getAllInterviewQuestions());
+                    case CliCommands.LIST ->
+                            printAllInterviewQuestions(interviewQuestionController.getAllInterviewQuestions());
                     case CliCommands.ADD -> addInterviewQuestion(scanner);
                 }
             }
         } while (!input.equals(CliCommands.EXIT));
 
-        List<InterviewQuestionDto> allInterviewQuestions = interviewQuestionController.getAllInterviewQuestions();
-        allInterviewQuestions.forEach(System.out::println);
+/*        List<InterviewQuestionDto> allInterviewQuestions = interviewQuestionController.getAllInterviewQuestions();
+        allInterviewQuestions.forEach(System.out::println);*/
     }
 
     private void addInterviewQuestion(Scanner scanner) {

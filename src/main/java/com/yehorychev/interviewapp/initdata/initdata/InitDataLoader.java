@@ -1,14 +1,21 @@
-package com.yehorychev.interviewapp.cliinterviewapp.initdata;
+package com.yehorychev.interviewapp.initdata.initdata;
 
-import com.yehorychev.interviewapp.cliinterviewapp.controller.InterviewQuestionController;
-import com.yehorychev.interviewapp.cliinterviewapp.dto.InterviewQuestionDto;
+import com.yehorychev.interviewapp.controller.controller.InterviewQuestionController;
+import com.yehorychev.interviewapp.dto.dto.InterviewQuestionDto;
+import jakarta.annotation.PostConstruct;
+import org.springframework.stereotype.Service;
 
 
+@Service
 public class InitDataLoader {
     private final InterviewQuestionController interviewQuestionController;
 
     public InitDataLoader(InterviewQuestionController interviewQuestionController) {
         this.interviewQuestionController = interviewQuestionController;
+    }
+
+    @PostConstruct
+    private void init() {
         loadTestData();
     }
 
