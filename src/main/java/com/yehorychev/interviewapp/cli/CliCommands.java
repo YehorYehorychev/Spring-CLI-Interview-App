@@ -1,4 +1,4 @@
-package com.yehorychev.interviewapp.cli.cli;
+package com.yehorychev.interviewapp.cli;
 
 public enum CliCommands {
     MENU("menu"),

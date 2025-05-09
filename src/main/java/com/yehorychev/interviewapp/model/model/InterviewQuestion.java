@@ -1,44 +1,21 @@
 package com.yehorychev.interviewapp.model.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Objects;
 
+@AllArgsConstructor
+@Getter
+@Setter
 public class InterviewQuestion {
     private Long id;
     private String question;
     private String answer;
 
-    public InterviewQuestion(Long id, String question, String answer) {
-        this.id = id;
-        this.question = question;
-        this.answer = answer;
-    }
-
     public InterviewQuestion(String question, String answer) {
         this(null, question, answer);
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getQuestion() {
-        return question;
-    }
-
-    public void setQuestion(String question) {
-        this.question = question;
-    }
-
-    public String getAnswer() {
-        return answer;
-    }
-
-    public void setAnswer(String answer) {
-        this.answer = answer;
     }
 
     @Override

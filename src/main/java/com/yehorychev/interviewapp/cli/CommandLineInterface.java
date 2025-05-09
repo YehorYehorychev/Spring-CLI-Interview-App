@@ -1,13 +1,15 @@
-package com.yehorychev.interviewapp.cli.cli;
+package com.yehorychev.interviewapp.cli;
 
 import com.yehorychev.interviewapp.controller.controller.InterviewQuestionController;
 import com.yehorychev.interviewapp.dto.dto.InterviewQuestionDto;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Scanner;
 
 @Component
+@RequiredArgsConstructor
 public class CommandLineInterface {
     public static final String ADD_INTERVIEW_QUESTION_MENU_TEXT = """
             ══════ Enter the question: ══════
@@ -15,10 +17,6 @@ public class CommandLineInterface {
             """;
     private final InterviewQuestionController interviewQuestionController;
     public static final String APP_WELCOME_TEXT = "Welcome to the Java Interview App";
-
-    public CommandLineInterface(InterviewQuestionController interviewQuestionController) {
-        this.interviewQuestionController = interviewQuestionController;
-    }
 
     public static final String APP_MENU_TEXT = """
             ╔════════════════════════════════════════════╗
