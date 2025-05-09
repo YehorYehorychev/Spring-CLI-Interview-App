@@ -1,4 +1,4 @@
-package com.yehorychev.interviewapp.dto.dto;
+package com.yehorychev.interviewapp.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

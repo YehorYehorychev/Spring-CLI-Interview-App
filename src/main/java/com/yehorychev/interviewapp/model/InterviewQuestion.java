@@ -1,4 +1,4 @@
-package com.yehorychev.interviewapp.model.model;
+package com.yehorychev.interviewapp.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

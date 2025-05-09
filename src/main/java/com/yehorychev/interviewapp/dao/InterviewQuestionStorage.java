@@ -1,6 +1,6 @@
-package com.yehorychev.interviewapp.dao.dao;
+package com.yehorychev.interviewapp.dao;
 
-import com.yehorychev.interviewapp.model.model.InterviewQuestion;
+import com.yehorychev.interviewapp.model.InterviewQuestion;
 
 import java.util.List;
 

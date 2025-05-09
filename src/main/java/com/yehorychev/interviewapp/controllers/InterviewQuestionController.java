@@ -1,8 +1,8 @@
-package com.yehorychev.interviewapp.controller.controller;
+package com.yehorychev.interviewapp.controllers;
 
-import com.yehorychev.interviewapp.dto.dto.InterviewQuestionDto;
-import com.yehorychev.interviewapp.model.model.InterviewQuestion;
-import com.yehorychev.interviewapp.service.service.InterviewQuestionService;
+import com.yehorychev.interviewapp.dto.InterviewQuestionDto;
+import com.yehorychev.interviewapp.model.InterviewQuestion;
+import com.yehorychev.interviewapp.service.InterviewQuestionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
