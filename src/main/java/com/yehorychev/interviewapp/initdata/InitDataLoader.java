@@ -1,7 +1,7 @@
-package com.yehorychev.interviewapp.initdata.initdata;
+package com.yehorychev.interviewapp.initdata;
 
-import com.yehorychev.interviewapp.controller.controller.InterviewQuestionController;
-import com.yehorychev.interviewapp.dto.dto.InterviewQuestionDto;
+import com.yehorychev.interviewapp.api.InterviewQuestionController;
+import com.yehorychev.interviewapp.dto.InterviewQuestionDto;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
-package com.yehorychev.interviewapp.service.service.mappers;
+package com.yehorychev.interviewapp.service.mappers;
 
-import com.yehorychev.interviewapp.dto.dto.InterviewQuestionDto;
-import com.yehorychev.interviewapp.model.model.InterviewQuestion;
+import com.yehorychev.interviewapp.dto.InterviewQuestionDto;
+import com.yehorychev.interviewapp.model.InterviewQuestion;
 import org.springframework.stereotype.Service;
 
 @Service

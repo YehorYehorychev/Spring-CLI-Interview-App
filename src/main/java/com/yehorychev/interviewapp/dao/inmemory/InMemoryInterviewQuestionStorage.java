@@ -1,7 +1,7 @@
-package com.yehorychev.interviewapp.dao.dao.inmemory;
+package com.yehorychev.interviewapp.dao.inmemory;
 
-import com.yehorychev.interviewapp.dao.dao.InterviewQuestionStorage;
-import com.yehorychev.interviewapp.model.model.InterviewQuestion;
+import com.yehorychev.interviewapp.dao.InterviewQuestionStorage;
+import com.yehorychev.interviewapp.model.InterviewQuestion;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
