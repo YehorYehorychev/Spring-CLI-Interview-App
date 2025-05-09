@@ -1,6 +1,6 @@
 package com.yehorychev.interviewapp.initdata;
 
-import com.yehorychev.interviewapp.controllers.InterviewQuestionController;
+import com.yehorychev.interviewapp.api.InterviewQuestionController;
 import com.yehorychev.interviewapp.dto.InterviewQuestionDto;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;

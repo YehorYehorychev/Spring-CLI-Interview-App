@@ -1,4 +1,4 @@
-package com.yehorychev.interviewapp.controllers;
+package com.yehorychev.interviewapp.api;
 
 import com.yehorychev.interviewapp.dto.InterviewQuestionDto;
 import com.yehorychev.interviewapp.model.InterviewQuestion;
