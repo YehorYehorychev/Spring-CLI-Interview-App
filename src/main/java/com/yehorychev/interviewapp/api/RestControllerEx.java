@@ -1,16 +1,22 @@
 package com.yehorychev.interviewapp.api;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/api/v1/test")
+@Slf4j
 public class RestControllerEx {
 
-    @GetMapping("/api/test") // By default, our application will run on localhost port:8080
-    public String getTest() {
-        return "GET Response Placeholder";
+//    @GetMapping("examples") // By default, our application will run on localhost port:8080
+    @RequestMapping(path = "users/{id}", method = RequestMethod.GET)
+    public String getTest(@PathVariable Long id) {
+        log.info("Processing your request in thread: {}", Thread.currentThread().getName());
+        return "User ID: " + id;
+        // http://localhost:8080/api/v1/test/users/5
     }
 
-    @PostMapping
+    /*@PostMapping
     public String postTest() {
         return "POST Response Placeholder";
     }
@@ -28,5 +34,5 @@ public class RestControllerEx {
     @DeleteMapping
     public String deleteTest() {
         return "DELETE Response Placeholder";
-    }
+    }*/
 }
